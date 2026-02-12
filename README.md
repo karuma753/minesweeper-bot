@@ -21,3 +21,9 @@
 -- 座標情報の二次元配列（board）→（coords_board）に修正、盤面情報の二次元配列（mine_board）を追加
 -- 16*16ピクセルずつcropし、テンプレートと比較。マッチングしたcell情報をmine_boardに格納
 -- 動作確認：実際の画面上の中央のマスをクリックし、更新された画面がmine_boardに正しく格納されていることを確認
+
+- 2026/2/12
+-- 5.png,6.png,bomb.pngを追加
+-- 以前に作成したコードからsemibacktrack関数を導入。
+-- 上記に併せて数字cell周辺の?cellを数字とともに辞書形式で取得する処理を追加
+-- pyautogui.click,pyautogui.rightclickを追加し、推測盤面以外でのクリアを確認
